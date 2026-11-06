@@ -1,6 +1,6 @@
 {
   "name": "dsh-bsk-daemon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "管理本机 bsk（BrowserSkill）daemon：状态、重启、版本与浏览器连接，并以一张卡片注册到 dsh 的「拓展」面板。",
   "type": "module",
   "license": "MIT",

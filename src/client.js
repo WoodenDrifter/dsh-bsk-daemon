@@ -296,7 +296,6 @@ window.__ModuleLoader__.load({
         zh: '本机 bsk daemon 的启停、版本与浏览器连接状态，可一键重启',
         en: 'Start, stop and inspect the local bsk daemon; shows version and browser connection',
       },
-      group: { id: 'browser', name: { zh: '浏览器与自动化', en: 'Browser & automation' } },
       order: 10,
       pluginName: PKG,
       icon: IconBsk,
