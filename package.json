@@ -1,0 +1,43 @@
+{
+  "name": "dsh-bsk-daemon",
+  "version": "1.0.0",
+  "description": "管理本机 bsk（BrowserSkill）daemon：状态、重启、版本与浏览器连接，并以一张卡片注册到 dsh 的「拓展」面板。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bsk",
+    "browserskill",
+    "browser-extension"
+  ],
+  "files": [
+    "src/",
+    "locale/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  }
+}

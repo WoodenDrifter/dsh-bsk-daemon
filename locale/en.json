@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Browser Skill (bsk)",
+    "description": "Manages the local bsk daemon (status, restart, version) and contributes one card to the Extensions panel"
+  }
+}
